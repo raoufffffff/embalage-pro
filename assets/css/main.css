@@ -1318,6 +1318,18 @@ section,
   height: 100%;
   position: relative;
   border-radius: 15px;
+  transition: all 1s;
+}
+
+.pricing .pricing-item:hover{
+  z-index: 10;
+  border: 3px solid var(--accent-color);
+}
+
+@media (min-width: 992px) {
+  .pricing .pricing-item:hover {
+    transform: scale(1.15);
+  }
 }
 
 .pricing h3 {
